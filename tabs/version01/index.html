@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Version 01</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div id="container">
+        <h2 id="tabs-title">Tabs Version 01</h2>
+        <div role="tablist" aria-labelledby="tabs-title" id="tablist">
+            <button class="tab active" role="tab" aria-controls="panel-1" aria-selected="true" id="tab-1">Tab 1</button>
+            <button class="tab" role="tab" aria-controls="panel-2" aria-selected="false" id="tab-2">Tab 2</button>
+            <button class="tab" role="tab" aria-controls="panel-3" aria-selected="false" id="tab-3">Tab 3</button>
+        </div>
+
+        <div class="panel active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+            <h3>Tab 1 Content</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptas totam iure, esse quas vero expedita aspernatur repellendus, voluptates delectus harum placeat dignissimos neque excepturi, beatae officiis sequi dolores asperiores.</p>
+        </div>
+
+        <div class="panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+            <h3>Tab 2 Content</h3>
+            <p>Hello World Panel 2</p>
+        </div>
+
+        <div class="panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+            <h3>Tab 3 Content</h3>
+            <p>Coding is fun</p>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
