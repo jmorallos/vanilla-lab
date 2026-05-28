@@ -1,0 +1,103 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 0.1px solid rgba(0,0,0,0.1); */
+}
+
+:root {
+    --xs: 4px;
+    --sm: 8px;
+    --md-sm: 12px;
+    --md: 16px;
+    --lg-md: 24px;
+    --lg: 32px;
+    --lg-xl: 48px;
+    --xl: 64px;
+
+    --text-primary: #222831;
+    --text-secondary: #393E46;
+    --bg-surface: #fff;
+    --bg-below: #eee;
+    --button: linear-gradient(45deg, #4BB8FA, #1591DC);
+    --button-hover: #2C5EAD;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-below);
+}
+
+#app {
+    max-width: 600px;
+    margin: var(--lg) auto 0;
+    padding: var(--lg);
+}
+
+strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--sm);
+}
+
+h1 {
+    text-align: center;
+    padding: var(--md);
+    margin-bottom: var(--md);
+}
+
+.card {
+    background-color: var(--bg-surface);
+    border-radius: var(--md);
+    padding: var(--md);
+    overflow: hidden;
+    margin-bottom: var(--md);
+    color: var(--text-secondary);
+}
+
+.checker-container {
+    display: flex;
+    gap: var(--md);
+}
+
+.checker-container__txt-input {
+    flex: 3;
+    padding: var(--sm) var(--md);
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.checker-container__check-btn {
+    appearance: none;
+    border: none;
+    border-radius: var(--md);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background: var(--button);
+    color: #fff;
+}
+
+.checker-container__check-btn:hover  {
+    background: var(--button-hover);
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container__result {
+    font-size: 1.5rem;
+    padding: var(--md);
+    text-align: center;
+}
+
+.result-container__result strong {
+    display: inline;
+}
